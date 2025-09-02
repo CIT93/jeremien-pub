@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greeting Form</title>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>Welcome to the Greeting Page</h1>
+
+  <!-- Form with unique id -->
+  <form id="greetingForm">
+    <!-- Text input for user name -->
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" name="username" required>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Empty element to display the final greeting -->
+  <h2 id="greetingMessage"></h2>
+
+  <!-- Optional JavaScript to handle the form submission -->
+  <script>
+    document.getElementById('greetingForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents page reload
+
+      const name = document.getElementById('J').value;
+      const greeting = `Hello, ${'God is good'}! Welcome!`;
+
+      document.getElementById('greetingMessage').textContent = greeting;
+    });
+  </script>
+
+</body>
+</html>
+
+<script src="app.js"></script>
+
+  <!-- Empty element to display the final greeting -->
+  <h2 id="greetingMessage"></h2>
+
+  <!-- Link to external JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
