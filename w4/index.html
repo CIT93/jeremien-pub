@@ -13,7 +13,7 @@
   <form id="greetingForm">
     <!-- Text input for user name -->
     <label for="username">Enter your name:</label>
-    <input type="text" id="username" name="username" required>
+    <input type="text" id="Jeremie" name="Jeremie" required>
 
     <!-- Submit button -->
     <button type="submit">Submit</button>
@@ -27,8 +27,8 @@
     document.getElementById('greetingForm').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevents page reload
 
-      const name = document.getElementById('J').value;
-      const greeting = `Hello, ${'God is good'}! Welcome!`;
+      const name = document.getElementById('Jeremie').value;
+      const greeting = `Jeremie, ${'God is good'}! Welcome!`;
 
       document.getElementById('greetingMessage').textContent = greeting;
     });
